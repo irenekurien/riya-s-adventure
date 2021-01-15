@@ -1,0 +1,6 @@
+<h1>Update Todo</h1>
+
+<form method="POST" action={% url 'viewtodo' %}>
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit">UPDATE</button>
+</form>
